@@ -18,7 +18,7 @@ func exitOnError(err error, msg string) {
 
 func Run() {
 	fmt.Println("Running the app")
-	repoURL := "https://sourcecode.socialcoding.bosch.com/scm/rhp/rhp-devops.git"
+	repoURL := "https://github.com/hhnigdeli/go-clone.git"
 	username, password, err := getGitCredentials.Get(repoURL)
 	if err != nil {
 		fmt.Printf("Error: %v\n", err)
@@ -29,5 +29,5 @@ func Run() {
 	fmt.Printf("Password: %s\n", password)
 
 	//cloner.Clone("c:/Dev/test2", repoURL, username, password)
-	parser.Parse("C:/Dev/Go/rhp-pm/package.json")
+	parser.Parse("/Users/hhnigdeli/dev/rhp-pm/package.json")
 }
