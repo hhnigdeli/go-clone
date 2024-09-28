@@ -1,0 +1,150 @@
+{
+  "name": "rhp-cs5800aw-hyd",
+  "ctrlType": "hyd",
+  "ctrlUse": "regular",
+  "version": "0.29.0-a8bf239f",
+  "packManBranch": "master",
+  "author": {
+    "name": "HC-ES/XSW",
+    "email": "noreply@de.bosch.com"
+  },
+  "supplier": {
+    "name": "Home Comfort Group"
+  },
+  "url": "https://sourcecode.socialcoding.bosch.com/scm/rhp/rhp-cs5000aw-hyd.git",
+  "license": "Proprietary",
+  "type": "application",
+  "description": "Model based development of cs5800 air water product (Indoor Unit)",
+  "dependencies": {
+    "fwIntegrationV4": {
+      "Branch": "",
+      "Commit": "",
+      "FolderName": "fwIntegrationV4",
+      "GetLatest": false,
+      "IgnoreForPackaging": false,
+      "Name": "fwIntegrationV4",
+      "SoftDependency": true,
+      "Tag": "v4.0.0-foxtrot.rc2",
+      "Url": "https://sourcecode.socialcoding.bosch.com/scm/ectacu/g0090_02-acu_hit_xcu_model_based_toolchain.git",
+      "Bootloader": "xCU_Main_Bootloader@0.6.0-rc1+1",
+      "allowDuplicate": true
+    },
+    "fwIntegrationV3": {
+      "Branch": "",
+      "Commit": "",
+      "FolderName": "fwIntegrationV3",
+      "GetLatest": false,
+      "IgnoreForPackaging": false,
+      "Name": "fwIntegrationV3",
+      "SoftDependency": true,
+      "Tag": "v3.2.3-rc7",
+      "Url": "https://sourcecode.socialcoding.bosch.com/scm/ectacu/g0090_02-acu_hit_xcu_model_based_toolchain.git",
+      "Bootloader": "ACU_HIT_xCU_Bootloader@1.2.1-rc.2-RAM+1",
+      "allowDuplicate": true
+    },
+    "RhpCs5000AwHydConfig": {
+      "Branch": "",
+      "Commit": "3920c64e89b08ea06e1fb8b06462bda82dbcbdea",
+      "FolderName": "../variants",
+      "GetLatest": false,
+      "IgnoreForPackaging": false,
+      "Name": "RhpCs5000AwHydConfig",
+      "SoftDependency": true,
+      "Tag": "",
+      "Url": "https://sourcecode.socialcoding.bosch.com/scm/rhp/rhp-cs5000aw-hyd-config.git",
+      "GetLatestNightly": true,
+      "nightlyBranch": "master"
+    },
+    "RhpCs5000AwRefConfig": {
+      "Branch": "",
+      "Commit": "216c7821da058eba2b3a74e7e1d948c382ef92eb",
+      "FolderName": "refVariants",
+      "GetLatest": false,
+      "IgnoreForPackaging": false,
+      "Name": "RhpCs5000AwRefConfig",
+      "SoftDependency": true,
+      "Tag": "",
+      "Url": "https://sourcecode.socialcoding.bosch.com/scm/rhp/rhp-cs5000aw-ref-config.git",
+      "GetLatestNightly": true,
+      "nightlyBranch": "master"
+    },
+    "hp-platform": {
+      "Branch": "",
+      "Commit": "0f781865abe0915108f25b5c91f1eb7d3753706f",
+      "FolderName": "hp-platform",
+      "GetLatest": false,
+      "IgnoreForPackaging": false,
+      "Name": "hp-platform",
+      "SoftDependency": true,
+      "Tag": "",
+      "Url": "https://sourcecode.socialcoding.bosch.com/scm/rhp/hp-platform.git",
+      "GetLatestNightly": true,
+      "nightlyBranch": "master"
+    },
+    "RhpDevOps": {
+      "Branch": "",
+      "Commit": "d024506717773981bcfa1747daac08ff12f9de26",
+      "FolderName": "rhp-devops",
+      "GetLatest": "false",
+      "IgnoreForPackaging": false,
+      "Name": "RhpDevOps",
+      "SoftDependency": true,
+      "Tag": "",
+      "Url": "https://sourcecode.socialcoding.bosch.com/scm/rhp/rhp-devops.git",
+      "GetLatestNightly": true,
+      "nightlyBranch": "master"
+    },
+    "rhp-messaging-lib": {
+      "Branch": "master",
+      "Commit": "",
+      "FolderName": "messaging",
+      "GetLatest": true,
+      "IgnoreForPackaging": true,
+      "Name": "rhp-messaging-lib",
+      "SoftDependency": true,
+      "Tag": "",
+      "Url": "https://sourcecode.socialcoding.bosch.com/scm/rhp/rhp-messaging-lib.git"
+    },
+    "rhp-nonvolatile-tables": {
+      "Branch": "",
+      "Commit": "a1922e8327662121422097da5a15852c0340e904",
+      "FolderName": "rhp-nonvolatile-tables",
+      "GetLatest": false,
+      "IgnoreForPackaging": false,
+      "Name": "rhp-nonvolatile-tables",
+      "SoftDependency": true,
+      "Tag": "",
+      "Url": "https://sourcecode.socialcoding.bosch.com/scm/rhp/rhp-nonvolatile-tables.git",
+      "GetLatestNightly": true,
+      "nightlyBranch": "master"
+    },
+    "xcu-tools": {
+      "Branch": "",
+      "Commit": "dcb2b8e35b0d09024ab4fa11e8b91c019a9c73e0",
+      "FolderName": "xcu-tools",
+      "GetLatest": true,
+      "IgnoreForPackaging": true,
+      "Name": "xcu-tools",
+      "SoftDependency": true,
+      "Tag": "",
+      "Url": "https://sourcecode.socialcoding.bosch.com/scm/rhp/xcu-tools.git",
+      "GetLatestNightly": true,
+      "nightlyBranch": "master"
+    }
+  },
+  "tooling": {
+    "matlab": {
+      "version": "R2021b.4",
+      "cmd": "bin/matlab.exe",
+      "cmdName": "matlab"
+    },
+    "mingw_x86_64": {
+      "version": "6.3.0"
+    },
+    "ictool": {
+      "version": "beta",
+      "cmd": "ictool.exe",
+      "cmdName": "ictool"
+    }
+  }
+}
